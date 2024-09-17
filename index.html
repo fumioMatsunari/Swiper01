@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiperで写真ギャラリー</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Sakuhin01.jpeg" alt="写真1"></div>
+            <div class="swiper-slide"><img src="Sakuhin02.jpeg" alt="写真2"></div>
+            <div class="swiper-slide"><img src="Sakuhin03.jpeg" alt="写真3"></div>
+            <div class="swiper-slide"><img src="Sakuhin04.jpeg" alt="写真4"></div>
+            <div class="swiper-slide"><img src="Sakuhin05.jpeg" alt="写真5"></div>
+            <div class="swiper-slide"><img src="Sakuhin06.jpeg" alt="写真6"></div>
+            <div class="swiper-slide"><img src="Sakuhin07.jpeg" alt="写真7"></div>
+            <div class="swiper-slide"><img src="Sakuhin08.jpeg" alt="写真8"></div>
+        </div>
+        <!-- ナビゲーションボタン -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

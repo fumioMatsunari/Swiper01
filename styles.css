@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.swiper-container {
+    width: 100%; /* 画面全体の幅に対して100% */
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+    height: auto; /* 高さを自動調整 */
+    aspect-ratio: 16 / 9; /* アスペクト比を16:9に保つ */
+    margin: 50px auto;
+}
+
+.swiper-slide img {
+    width: 100%; /* 画像をスライダーの幅に合わせて縮小 */
+    height: 100%; /* 画像の高さもスライダーに合わせて調整 */
+    object-fit: cover; /* 画像をスライド枠にフィットさせる */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: #007aff;
+}
+
+/* 画面幅が小さくなった場合でも自動的に対応する */
+@media (max-width: 768px) {
+    .swiper-container {
+        aspect-ratio: 4 / 3; /* 画面が小さい場合にアスペクト比を4:3に調整 */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-container {
+        aspect-ratio: 1 / 1; /* スマホ用にアスペクト比を1:1に変更 */
+    }
+}
