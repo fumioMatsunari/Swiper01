@@ -1,15 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
     background-color: #f0f0f0;
 }
 
-.swiper-container {
-    width: 100%; /* 画面全体の幅に対して100% */
-    max-width: 1200px; /* 最大幅を1200pxに設定 */
-    height: auto; /* 高さを自動調整 */
-    aspect-ratio: 16 / 9; /* アスペクト比を16:9に保つ */
+.swiper{
+    width: 800px; /* 幅を800pxに設定 */
+    height: 500px; /* 高さを自動調整 */
+/*    aspect-ratio: 16 / 9; /* アスペクト比を16:9に保つ */
     margin: 50px auto;
 }
 
